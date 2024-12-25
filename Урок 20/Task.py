@@ -26,7 +26,7 @@ def single_thread_execution():
 def multithread_execution():
     start_time = time.time()
     threads = []
-    for i in range(1000):
+    for i in range(100):
         thread = Thread(target=create_file, args=(i,))
         threads.append(thread)
         thread.start()
